@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/root_layout"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginRight="8dp"
+            android:id="@+id/back_press_details"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anno"
+            android:textSize="22sp"
+            android:textColor="@color/textPrimaryColor"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.4"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <!--<TextView android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="User"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="4dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:maxLines="2"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/profile_username"-->
+                <!--/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Edit"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="#303F9F"-->
+                <!--android:id="@+id/uploadimage"-->
+                <!--/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.6"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:src="@drawable/prof"-->
+                <!--android:id="@+id/profile_pic"-->
+                <!--android:layout_gravity="end"-->
+                <!--/>-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="6dp"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/profile_pic"
+                        android:src="@drawable/usercol"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="edit"
+                        android:textColor="#303F9F"
+                        android:id="@+id/uploadimage"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="4dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="USer"
+                    android:textSize="20sp"
+                    android:layout_marginTop="22dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/profile_username"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Display name"
+                    android:id="@+id/anonymus_name"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter an anonymus name."
+                    android:layout_marginLeft="2dp"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Interested In"
+                    android:id="@+id/interested_in"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="example: men,women,dating etc."
+                    android:layout_marginLeft="2dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textColor="@color/textPrimaryColor"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/update_basic_details"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#EEEEEE"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/change_password_card"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:text="Change Password"
+                        android:padding="4dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dropdown"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/dropimage"
+
+                        />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#EEEEEE"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:id="@+id/innercard"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Current Password"
+                            android:id="@+id/current_password"
+                            android:inputType="textPassword"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="New Password"
+                            android:id="@+id/new_password"
+                            android:inputType="textPassword"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Confirm Password"
+                            android:id="@+id/confirm_password"
+                            android:inputType="textPassword"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Change password"
+                        android:textColor="@color/textPrimaryColor"
+                        android:backgroundTint="@color/colorAccent"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/changepassword"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

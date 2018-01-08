@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context="com.aahho.anno.AnnoLoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anno"
+        android:textStyle="normal"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="40sp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowColor="@color/textPrimaryColor"
+        android:shadowRadius="10"
+        android:id="@+id/heading"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/horizontal_line"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal_line"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/text_username"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/user"
+            android:drawableStart="@drawable/user"
+            android:id="@+id/reg_username"
+            android:textColor="@color/textPrimaryColor"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_username"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/text_password"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/reg_password"
+            android:drawableLeft="@drawable/password"
+            android:drawableStart="@drawable/password"
+            android:textColor="@color/textPrimaryColor"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_password"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/text_confirmpassword"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:id="@+id/reg_confirmpassword"
+            android:drawableLeft="@drawable/confirm"
+            android:drawableStart="@drawable/confirm"
+            android:textColor="@color/textPrimaryColor"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_confirmpassword"
+        android:text="Sign Up"
+        android:textColor="@color/textPrimaryColor"
+        android:alpha="0.80"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundedcorner"
+        android:id="@+id/reg_signup"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/reg_signup"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/horizontal_line2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account ?"
+        android:id="@+id/accountexist"
+        android:textColor="@color/textPrimaryColor"
+        android:layout_below="@+id/horizontal_line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/accountexist"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/horizontal_line3"
+        />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="F"-->
+    <!--android:id="@+id/forgot_password"-->
+    <!--android:textColor="@color/textPrimaryColor"-->
+    <!--android:layout_below="@+id/horizontal_line2"-->
+    <!--android:layout_toRightOf="@+id/signup"-->
+    <!--android:layout_toEndOf="@+id/signup"-->
+    <!--/>-->
+
+
+
+
+
+
+
+
+</RelativeLayout>

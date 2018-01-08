@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginRight="8dp"
+            android:id="@+id/back_press"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/chat_image"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textPrimaryColor"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:id="@+id/chat_receiver_name"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textPrimaryColor"
+                android:id="@+id/chat_receiver_status"
+                />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:id="@+id/chat_screen_lview"
+        android:divider="@null"
+        android:dividerHeight="4dp"
+        android:listSelector="@android:color/transparent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="10dp">
+    </ListView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFFFFF"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emoji"
+                android:src="@drawable/emoji"
+                android:layout_gravity="bottom"
+                />
+            <com.vanniktech.emoji.EmojiEditText
+                android:id="@+id/textmessage"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSend"
+                android:textSize="14sp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:background="@android:color/transparent"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send"
+                android:src="@drawable/send"
+                android:layout_gravity="bottom"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

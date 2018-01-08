@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1004628283797",
+    "firebase_url": "https://aahhocom.firebaseio.com",
+    "project_id": "aahhocom",
+    "storage_bucket": "aahhocom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004628283797:android:81ae8801da5e9626",
+        "android_client_info": {
+          "package_name": "com.aahho.anno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004628283797-n40lte90g203e9442l1ccgtjamsc7n6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBycpQKMImMqHn6x40i5m7NaImRs8hjDM8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

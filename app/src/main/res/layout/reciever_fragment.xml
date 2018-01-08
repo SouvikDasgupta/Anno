@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_con"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.vanniktech.emoji.EmojiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textColor="@color/textPrimaryColor"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:id="@+id/text_message"
+            android:background="@drawable/chatbubble"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="10dp"
+            android:maxWidth="250dp"
+            android:elevation="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 Jan 17, 12:35 Am"
+            android:textSize="10sp"
+            android:paddingLeft="2dp"
+            android:paddingTop="2dp"
+            android:id="@+id/date"
+            android:textColor="@color/textPrimaryColor"
+            app:layout_constraintTop_toBottomOf="@+id/text_message"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp" />
+
+
+</android.support.constraint.ConstraintLayout>

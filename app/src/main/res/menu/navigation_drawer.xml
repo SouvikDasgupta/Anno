@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<group android:id="@+id/nav_menu">-->
+        <!--<item-->
+            <!--android:id="@+id/home"-->
+            <!--android:title="Home"-->
+            <!--android:icon="@drawable/home"-->
+            <!--/>-->
+    <!--</group>-->
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1"
+        >
+        <item android:title="My Profile">
+            <menu>
+                <item
+                    android:id="@+id/user"
+                    android:title="My Profile"
+                    android:icon="@drawable/usercol"
+                    />
+                <!--<item-->
+                    <!--android:id="@+id/profilepicture"-->
+                    <!--android:title="Profile picture"-->
+                    <!--android:icon="@drawable/dp"-->
+                    <!--/>-->
+                <item
+                    android:id="@+id/logout"
+                    android:title="Logout"
+                    android:icon="@drawable/logout"
+                    />
+            </menu>
+        </item>
+    </group>
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item android:title="CONTACT US">-->
+            <!--<menu>-->
+                <!--<item-->
+                    <!--android:id="@+id/call"-->
+                    <!--android:title="Call our customer support"-->
+                    <!--android:icon="@drawable/call"-->
+                    <!--/>-->
+                <!--<item-->
+                    <!--android:id="@+id/feedback"-->
+                    <!--android:title="Write to us/ Feedback"-->
+                    <!--android:icon="@drawable/feedback"-->
+                    <!--/>-->
+            <!--</menu>-->
+        <!--</item>-->
+    <!--</group>-->
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item android:title="POLICIES">-->
+            <!--<menu>-->
+                <!--<item-->
+                    <!--android:id="@+id/privacy"-->
+                    <!--android:title="Privacy Policy"-->
+                    <!--android:icon="@drawable/policy"-->
+                    <!--/>-->
+                <!--<item-->
+                    <!--android:id="@+id/terms"-->
+                    <!--android:title="Terms and Conditions"-->
+                    <!--android:icon="@drawable/terms"-->
+                    <!--/>-->
+                <!--<item-->
+                    <!--android:id="@+id/cancel"-->
+                    <!--android:title="Cancellation and Returns"-->
+                    <!--android:icon="@drawable/cancel"-->
+                    <!--/>-->
+            <!--</menu>-->
+        <!--</item>-->
+    <!--</group>-->
+
+
+</menu>
